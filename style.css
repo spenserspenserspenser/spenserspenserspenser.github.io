@@ -1,3 +1,26 @@
 body{
-     background-color: red;
+     background-color: blue;
 }
+
+div.details {
+     font-size: 60px;
+     color: aliceblue;
+     font-family: Arial, Helvetica, sans-serif;
+     margin-bottom: 100px;
+ 
+ }
+ 
+ div.title {
+     font-size: 40;
+     color:coral;
+     font-family: Arial, Helvetica, sans-serif
+ }
+ 
+ div.text {
+     font-size: 25;
+     color: aliceblue;
+     font-family: Arial, Helvetica, sans-serif;
+     margin-bottom: 50px;
+     margin-top: 10px;
+ }
+ 
