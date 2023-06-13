@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function () {
+          //add constraints object
+          var constraints = { audio: true, video: true };
+        
+          //call getUserMedia, then the magic
+          navigator.mediaDevices
+            .getUserMedia(constraints)
+            .then(function (mediaStream) {
+              var video = document.querySelector("video");
+              video.srcObject = mediaStream;
+              video.play();
+            })
+            .catch(function (err) {});
+        };
+        </script>
+   
+</head>
+
+
+<body>
+    
+    <div class="row">
+        <div class="col width100 title texttitle">
+
+            Express <br>
+            <span class="yourself">Yourself</span>
+
+            <div class="textbody">
+                A website to help you understand your art
+            </div>
+        </div>
+
+    <div class="col width100">
+
+        <img src="express yourself.png" alt="title">
+        <br>
+        <img src="calltoaction.png" alt="banner">
+        
+
+    </div>
+
+
+    </div>
+
+
+        <div class="col width66">
+            <video class="webcam"></video>
+             <div class="textbody">
+                Some feelings are hard to verbalize. Some thoughts we don’t want to say out loud. So what do we do with them? Ask yourself. 
+            </div>
+        </div>
+        <div class="col width33">
+            <div class="mediumcircle">
+                <img src="greencirclelarge.png" alt="">
+            </div>
+            <div class="smallcircle">
+                <img src="bluecirclesmall.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+     <div class="row">
+       <div class="col width25">
+        </div>
+       <div class="col width75">
+        <div class="textbody">
+            When we express our feelings honestly, we are better equipped to deal with them because we actually know what we are feeling instead of denying it. By virtue of being human, we are full of thoughts and ideas that inhabit us with energy. 
+<br>
+
+<br>
+            And if the creative energy in our mind sits untouched, it can turn on itself and we feel all sorts of anxiety and restlessness. To maintain our emotional wellbeing, we need to exercise our creativity.
+        </div>
+
+       </div>
+     </div>
+
+    </div>
+
+
+    <div class="banner">
+        <marquee direction="right">"Express Yourself" is non-liable for anything</marquee>
+      </div>
+</body>
+</html>
