@@ -153,6 +153,12 @@ div.banner {
     color: red;
     padding: 30px;
   }
+
+  div.darkbluepage {
+    background-color: #00008b;
+    color:#ff8c00;
+    padding:30px;
+  }
   
   
   
